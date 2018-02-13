@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Details{% endblock %}
+{% block content %}
+    <div class="jumbotron">
+        <h1 class="display-3">Welcome David</h1>
+        <p class="lead">You can register a business with us. </p>
+        <hr class="my-4">
+        <p>Simply click below</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="{{ url_for('templates', filename='regbusiness.html') }}" role="button">Learn more</a>
+        </p>
+    </div>
+{% endblock %}
+

@@ -1,0 +1,26 @@
+
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+{% block content %}
+     <form method="POST">
+        <div class="imgcontainer">
+{#      <img src="{{url_for('static', filename='images/hello.png')}}" alt="Avatar" class="avatar">#}
+        </div>
+
+        <div class="form-group">
+            <h1>Login</h1>
+            <p>Hello user, please Login.</p>
+            <hr>
+            {{ form.Username.label }}<br>
+
+            {{ form.Username(class="form-control") }}<br>
+            {{ form.Password.label }}<br>
+            {{ form.Password(class="form-control") }}<br>
+            {{ form.submit(class="btn btn-info") }}
+        </div>
+
+        {{ message }}
+  </form>
+{% endblock %}
+
+
